@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<BoardLayout xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation='Bidule.xsd'>
+	<BiduleGroup id="UID_1203245438" displayPath="plpheads\tabc" displayName="abc" zoom="0.55" type="com.plogue.groups.abc" processingMode="process" author="sondod" version="1.0">
+		<Geometry x="280.5" y="-25.5" w="0" h="0"/>
+		<Channel index="0" name="Sample Input Channel 1" direction="input" type="samples"/>
+		<Channel index="0" name="Sample Output Channel 1" direction="output" type="samples"/>
+		<Gui state="normal" hidden="true" generic="true">
+			<Geometry x="0" y="0" w="0" h="0"/>
+		</Gui>
+		<Parameter id="-7" userMin="0" userMax="1" lockedForRandom="false" mutationFactor="0.1">1</Parameter>
+		<Parameter id="-5" userMin="0" userMax="0" lockedForRandom="false" mutationFactor="0.1">0.0</Parameter>
+		<Parameter id="-2" userMin="0" userMax="2" lockedForRandom="false" mutationFactor="0.1">0.0</Parameter>
+		<Bidule id="UID_1203245436" type="com.plogue.Change" displayName="Change_66" processingMode="process">
+			<Geometry x="-9.36364" y="90.8636" w="0" h="0"/>
+			<ChannelConfig numSampleIn="1" numSampleOut="1" numMidiIn="0" numMidiOut="0" numFreqIn="0" numFreqOut="0" numMagIn="0" numMagOut="0"/>
+			<Parameter id="-7" userMin="0" userMax="1" lockedForRandom="false" mutationFactor="0.1">1</Parameter>
+			<Parameter id="-2" userMin="0" userMax="2" lockedForRandom="false" mutationFactor="0.1">0.0</Parameter>
+		</Bidule>
+		<Bidule id="UID_1203245437" type="com.plogue.UnaryOperator" displayName="Abs" processingMode="process">
+			<Geometry x="-17.3636" y="-2.13639" w="0" h="0"/>
+			<ChannelConfig numSampleIn="1" numSampleOut="1" numMidiIn="0" numMidiOut="0" numFreqIn="0" numFreqOut="0" numMagIn="0" numMagOut="0"/>
+			<Gui state="normal" hidden="true" generic="true">
+				<Geometry x="690" y="446" w="392" h="173"/>
+			</Gui>
+			<Parameter id="-7" userMin="0" userMax="1" lockedForRandom="false" mutationFactor="0.1">1</Parameter>
+			<Parameter id="-5" userMin="0" userMax="0" lockedForRandom="false" mutationFactor="0.1">0.0</Parameter>
+			<Parameter id="-2" userMin="0" userMax="2" lockedForRandom="false" mutationFactor="0.1">0.0</Parameter>
+			<Parameter id="0" userMin="0" userMax="22" lockedForRandom="false" mutationFactor="0.1">2.0</Parameter>
+			<Parameter id="1" userMin="0" userMax="1" lockedForRandom="false" mutationFactor="0.1">0</Parameter>
+		</Bidule>
+		<Link producerId="UID_1203245436" producerChannel="0" listenerId="UID_1203245437" listenerChannel="0"/>
+		<Link producerId="UID_1203245438" producerChannel="0" listenerId="UID_1203245436" listenerChannel="0"/>
+		<Link producerId="UID_1203245437" producerChannel="0" listenerId="UID_1203245438" listenerChannel="0"/>
+	</BiduleGroup>
+	<Automation id="Automation"/>
+</BoardLayout>
