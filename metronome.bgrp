@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<BoardLayout xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation='Bidule.xsd'>
+	<BiduleGroup id="UID_1242249556" displayPath="plpheads\tmetronome" displayName="metronome" zoom="1" type="com.plogue.groups.metronome" processingMode="process" author="sondod" version="1.0">
+		<Geometry x="-226.5" y="159.5" w="0" h="0"/>
+		<Gui state="normal" hidden="true" generic="true">
+			<Geometry x="1" y="399" w="461" h="257"/>
+		</Gui>
+		<Parameter id="-7" userMin="0" userMax="1" lockedForRandom="false" mutationFactor="0.1">1</Parameter>
+		<Parameter id="-5" userMin="0" userMax="0" lockedForRandom="false" mutationFactor="0.1">0.0</Parameter>
+		<Parameter id="-2" userMin="0" userMax="2" lockedForRandom="false" mutationFactor="0.1">0.0</Parameter>
+		<Bidule id="UID_1242249552" type="com.plogue.SyncCreator" displayName="Clock" processingMode="process">
+			<Geometry x="-21.5" y="-31.5" w="0" h="0"/>
+			<ChannelConfig numSampleIn="4" numSampleOut="0" numMidiIn="0" numMidiOut="0" numFreqIn="0" numFreqOut="0" numMagIn="0" numMagOut="0"/>
+			<Gui state="normal" hidden="true" generic="true">
+				<Geometry x="283" y="416" w="392" h="181"/>
+			</Gui>
+			<Parameter id="-7" userMin="0" userMax="1" lockedForRandom="false" mutationFactor="0.1">1</Parameter>
+			<Parameter id="-5" userMin="0" userMax="0" lockedForRandom="false" mutationFactor="0.1">0.0</Parameter>
+			<Parameter id="-2" userMin="0" userMax="2" lockedForRandom="false" mutationFactor="0.1">0.0</Parameter>
+			<Parameter id="0" userMin="0" userMax="63" lockedForRandom="false" mutationFactor="0.1">3.0</Parameter>
+			<Parameter id="1" userMin="0" userMax="5" lockedForRandom="false" mutationFactor="0.1">2.0</Parameter>
+		</Bidule>
+		<Bidule id="UID_1242249553" type="com.plogue.Gate" displayName="Power" processingMode="process">
+			<Geometry x="-21.5" y="88.5" w="0" h="0"/>
+			<ChannelConfig numSampleIn="0" numSampleOut="1" numMidiIn="0" numMidiOut="0" numFreqIn="0" numFreqOut="0" numMagIn="0" numMagOut="0"/>
+			<Gui state="normal" hidden="true" generic="true">
+				<Geometry x="283" y="430" w="392" h="154"/>
+			</Gui>
+			<Parameter id="-7" userMin="0" userMax="1" lockedForRandom="false" mutationFactor="0.1">1</Parameter>
+			<Parameter id="-5" userMin="0" userMax="0" lockedForRandom="false" mutationFactor="0.1">0.0</Parameter>
+			<Parameter id="-2" userMin="0" userMax="2" lockedForRandom="false" mutationFactor="0.1">0.0</Parameter>
+			<Parameter id="0" userMin="0" userMax="1" lockedForRandom="false" mutationFactor="0.1">0</Parameter>
+		</Bidule>
+		<Bidule id="UID_1242249554" type="com.plogue.Variable" displayName="BPM" processingMode="process">
+			<Geometry x="-7.5" y="60.5" w="0" h="0"/>
+			<ChannelConfig numSampleIn="0" numSampleOut="1" numMidiIn="0" numMidiOut="0" numFreqIn="0" numFreqOut="0" numMagIn="0" numMagOut="0"/>
+			<Gui state="normal" hidden="true" generic="true">
+				<Geometry x="283" y="427" w="392" h="160"/>
+			</Gui>
+			<Parameter id="-7" userMin="0" userMax="1" lockedForRandom="false" mutationFactor="0.1">1</Parameter>
+			<Parameter id="-5" userMin="0" userMax="0" lockedForRandom="false" mutationFactor="0.1">0.0</Parameter>
+			<Parameter id="-2" userMin="0" userMax="2" lockedForRandom="false" mutationFactor="0.1">0.0</Parameter>
+			<Parameter id="0" userMin="20" userMax="200" lockedForRandom="false" mutationFactor="0.1">88.0</Parameter>
+		</Bidule>
+		<Bidule id="UID_1242249555" type="com.plogue.Trigger" displayName="Reset" processingMode="process">
+			<Geometry x="6.5" y="35.5" w="0" h="0"/>
+			<ChannelConfig numSampleIn="0" numSampleOut="1" numMidiIn="0" numMidiOut="0" numFreqIn="0" numFreqOut="0" numMagIn="0" numMagOut="0"/>
+			<Gui state="normal" hidden="true" generic="true">
+				<Geometry x="249" y="416" w="461" h="182"/>
+			</Gui>
+			<Parameter id="-7" userMin="0" userMax="1" lockedForRandom="false" mutationFactor="0.1">1</Parameter>
+			<Parameter id="-5" userMin="0" userMax="0" lockedForRandom="false" mutationFactor="0.1">0.0</Parameter>
+			<Parameter id="-2" userMin="0" userMax="2" lockedForRandom="false" mutationFactor="0.1">0.0</Parameter>
+			<Parameter id="0" userMin="0" userMax="2" lockedForRandom="false" mutationFactor="0.1">0.0</Parameter>
+		</Bidule>
+		<Link producerId="UID_1242249555" producerChannel="0" listenerId="UID_1242249552" listenerChannel="2"/>
+		<Link producerId="UID_1242249553" producerChannel="0" listenerId="UID_1242249552" listenerChannel="0"/>
+		<Link producerId="UID_1242249554" producerChannel="0" listenerId="UID_1242249552" listenerChannel="1"/>
+		<VirtualParameter id="0" source="UID_1242249553" param="0" displayName="Power"/>
+		<VirtualParameter id="1" source="UID_1242249552" param="0" displayName="Time signature numerator"/>
+		<VirtualParameter id="2" source="UID_1242249552" param="1" displayName="Time signature denominator"/>
+		<VirtualParameter id="3" source="UID_1242249554" param="0" displayName="BPM"/>
+		<VirtualParameter id="4" source="UID_1242249555" param="1" displayName="Reset to 0"/>
+	</BiduleGroup>
+	<Automation id="Automation"/>
+</BoardLayout>
