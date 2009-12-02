@@ -7,7 +7,7 @@
 		<Channel index="0" name="L" direction="output" type="samples"/>
 		<Channel index="1" name="R" direction="output" type="samples"/>
 		<Gui state="normal" hidden="true" generic="true">
-			<Geometry x="311" y="335" w="447" h="419"/>
+			<Geometry x="139" y="277" w="447" h="419"/>
 		</Gui>
 		<Parameter id="-9" userMin="0" userMax="0" lockedForRandom="false" mutationFactor="0.1">1.0</Parameter>
 		<Parameter id="-7" userMin="0" userMax="1" lockedForRandom="false" mutationFactor="0.1">1</Parameter>
@@ -44,7 +44,7 @@
 			<Channel index="0" name="Column" direction="input" type="samples"/>
 			<Channel index="0" name="Offset" direction="output" type="samples"/>
 			<Gui state="normal" hidden="true" generic="true">
-				<Geometry x="0" y="0" w="0" h="0"/>
+				<Geometry x="436" y="360" w="392" h="347"/>
 			</Gui>
 			<Parameter id="-9" userMin="0" userMax="0" lockedForRandom="false" mutationFactor="0.1">1.0</Parameter>
 			<Parameter id="-7" userMin="0" userMax="1" lockedForRandom="false" mutationFactor="0.1">1</Parameter>
@@ -72,7 +72,7 @@
 				<Parameter id="-7" userMin="0" userMax="1" lockedForRandom="false" mutationFactor="0.1">1</Parameter>
 				<Parameter id="-5" userMin="0" userMax="0" lockedForRandom="false" mutationFactor="0.1">0.0</Parameter>
 				<Parameter id="-2" userMin="0" userMax="2" lockedForRandom="false" mutationFactor="0.1">0.0</Parameter>
-				<Parameter id="0" userMin="-10" userMax="0" lockedForRandom="false" mutationFactor="0.1">0.0</Parameter>
+				<Parameter id="0" userMin="-10" userMax="10" lockedForRandom="false" mutationFactor="0.1">0.0</Parameter>
 			</Bidule>
 			<Bidule id="UID_1205098641" type="com.plogue.Variable" displayName="Slice7" processingMode="process">
 				<Geometry x="92.25" y="76.625" w="0" h="0"/>
@@ -96,7 +96,7 @@
 				<Parameter id="-7" userMin="0" userMax="1" lockedForRandom="false" mutationFactor="0.1">1</Parameter>
 				<Parameter id="-5" userMin="0" userMax="0" lockedForRandom="false" mutationFactor="0.1">0.0</Parameter>
 				<Parameter id="-2" userMin="0" userMax="2" lockedForRandom="false" mutationFactor="0.1">0.0</Parameter>
-				<Parameter id="0" userMin="0" userMax="10" lockedForRandom="false" mutationFactor="0.1">8.571429</Parameter>
+				<Parameter id="0" userMin="0" userMax="10" lockedForRandom="false" mutationFactor="0.1">0.0</Parameter>
 			</Bidule>
 			<Bidule id="UID_1205098645" type="com.plogue.Variable" displayName="Slice6" processingMode="process">
 				<Geometry x="48.5" y="76.625" w="0" h="0"/>
@@ -132,7 +132,7 @@
 				<Parameter id="-7" userMin="0" userMax="1" lockedForRandom="false" mutationFactor="0.1">1</Parameter>
 				<Parameter id="-5" userMin="0" userMax="0" lockedForRandom="false" mutationFactor="0.1">0.0</Parameter>
 				<Parameter id="-2" userMin="0" userMax="2" lockedForRandom="false" mutationFactor="0.1">0.0</Parameter>
-				<Parameter id="0" userMin="-10" userMax="10" lockedForRandom="false" mutationFactor="0.1">1.607843</Parameter>
+				<Parameter id="0" userMin="-10" userMax="10" lockedForRandom="false" mutationFactor="0.1">0.0</Parameter>
 			</Bidule>
 			<Bidule id="UID_1205098651" type="com.plogue.Variable" displayName="Slice5" processingMode="process">
 				<Geometry x="6" y="76.625" w="0" h="0"/>
@@ -156,7 +156,7 @@
 				<Parameter id="-7" userMin="0" userMax="1" lockedForRandom="false" mutationFactor="0.1">1</Parameter>
 				<Parameter id="-5" userMin="0" userMax="0" lockedForRandom="false" mutationFactor="0.1">0.0</Parameter>
 				<Parameter id="-2" userMin="0" userMax="2" lockedForRandom="false" mutationFactor="0.1">0.0</Parameter>
-				<Parameter id="0" userMin="-10" userMax="10" lockedForRandom="false" mutationFactor="0.1">-4.509804</Parameter>
+				<Parameter id="0" userMin="-10" userMax="10" lockedForRandom="false" mutationFactor="0.1">0.0</Parameter>
 			</Bidule>
 			<Bidule id="UID_1205098655" type="com.plogue.BinaryOperator" displayName="+" processingMode="process">
 				<Geometry x="7.66667" y="194" w="0" h="0"/>
