@@ -44,7 +44,7 @@
 			<Channel index="0" name="Column" direction="input" type="samples"/>
 			<Channel index="0" name="Offset" direction="output" type="samples"/>
 			<Gui state="normal" hidden="true" generic="true">
-				<Geometry x="436" y="360" w="392" h="347"/>
+				<Geometry x="586" y="278" w="392" h="347"/>
 			</Gui>
 			<Parameter id="-9" userMin="0" userMax="0" lockedForRandom="false" mutationFactor="0.1">1.0</Parameter>
 			<Parameter id="-7" userMin="0" userMax="1" lockedForRandom="false" mutationFactor="0.1">1</Parameter>
@@ -1555,7 +1555,7 @@
 			<Link producerId="UID_1240221777" producerChannel="1" listenerId="UID_1240221791" listenerChannel="2"/>
 			<Link producerId="UID_1240221791" producerChannel="0" listenerId="UID_1240221780" listenerChannel="1"/>
 		</BiduleGroup>
-		<BiduleGroup id="UID_1240916488" displayName="CRC" zoom="1" type="com.plogue.groups.ColRowCheck" processingMode="mute" author="sondod" version="1.0">
+		<BiduleGroup id="UID_1240916488" displayName="CRC" zoom="1" type="com.plogue.groups.ColRowCheck" processingMode="process" author="sondod" version="1.0">
 			<Geometry x="-256.444" y="399.111" w="0" h="0"/>
 			<Channel index="0" name="Sample Input Channel 1" direction="input" type="samples"/>
 			<Channel index="1" name="Sample Input Channel 2" direction="input" type="samples"/>
@@ -1567,8 +1567,8 @@
 			<Parameter id="-9" userMin="0" userMax="0" lockedForRandom="false" mutationFactor="0.1">1.0</Parameter>
 			<Parameter id="-7" userMin="0" userMax="1" lockedForRandom="false" mutationFactor="0.1">1</Parameter>
 			<Parameter id="-5" userMin="0" userMax="0" lockedForRandom="false" mutationFactor="0.1">0.0</Parameter>
-			<Parameter id="-2" userMin="0" userMax="2" lockedForRandom="false" mutationFactor="0.1">1.0</Parameter>
-			<BiduleGroup id="UID_1240916466" displayName="checkVal" zoom="0.8" type="com.plogue.groups.checkVal" processingMode="mute" author="sondod" version="1.0">
+			<Parameter id="-2" userMin="0" userMax="2" lockedForRandom="false" mutationFactor="0.1">0.0</Parameter>
+			<BiduleGroup id="UID_1240916466" displayName="checkVal" zoom="0.8" type="com.plogue.groups.checkVal" processingMode="process" author="sondod" version="1.0">
 				<Geometry x="-35.556" y="117.556" w="0" h="0"/>
 				<Channel index="0" name="Sample Input Channel 1" direction="input" type="samples"/>
 				<Channel index="0" name="Sample Output Channel 1" direction="output" type="samples"/>
@@ -1578,7 +1578,7 @@
 				<Parameter id="-9" userMin="0" userMax="0" lockedForRandom="false" mutationFactor="0.1">1.0</Parameter>
 				<Parameter id="-7" userMin="0" userMax="1" lockedForRandom="false" mutationFactor="0.1">1</Parameter>
 				<Parameter id="-5" userMin="0" userMax="0" lockedForRandom="false" mutationFactor="0.1">0.0</Parameter>
-				<Parameter id="-2" userMin="0" userMax="2" lockedForRandom="false" mutationFactor="0.1">1.0</Parameter>
+				<Parameter id="-2" userMin="0" userMax="2" lockedForRandom="false" mutationFactor="0.1">0.0</Parameter>
 				<Bidule id="UID_1240916457" type="com.plogue.BinaryLogicOperator" displayName="&gt;=" processingMode="process">
 					<Geometry x="-27.8064" y="-26.249" w="0" h="0"/>
 					<ChannelConfig numSampleIn="2" numSampleOut="1" numMidiIn="0" numMidiOut="0" numFreqIn="0" numFreqOut="0" numMagIn="0" numMagOut="0"/>
@@ -1651,7 +1651,7 @@
 				<VirtualParameter id="0" source="UID_1240916459" param="1" displayName="&gt;="/>
 				<VirtualParameter id="1" source="UID_1240916463" param="1" displayName="&lt;="/>
 			</BiduleGroup>
-			<BiduleGroup id="UID_1240916475" displayName="checkVal" zoom="0.8" type="com.plogue.groups.checkVal" processingMode="mute" author="sondod" version="1.0">
+			<BiduleGroup id="UID_1240916475" displayName="checkVal" zoom="0.8" type="com.plogue.groups.checkVal" processingMode="process" author="sondod" version="1.0">
 				<Geometry x="25.555" y="118.667" w="0" h="0"/>
 				<Channel index="0" name="Sample Input Channel 1" direction="input" type="samples"/>
 				<Channel index="0" name="Sample Output Channel 1" direction="output" type="samples"/>
@@ -1661,7 +1661,7 @@
 				<Parameter id="-9" userMin="0" userMax="0" lockedForRandom="false" mutationFactor="0.1">1.0</Parameter>
 				<Parameter id="-7" userMin="0" userMax="1" lockedForRandom="false" mutationFactor="0.1">1</Parameter>
 				<Parameter id="-5" userMin="0" userMax="0" lockedForRandom="false" mutationFactor="0.1">0.0</Parameter>
-				<Parameter id="-2" userMin="0" userMax="2" lockedForRandom="false" mutationFactor="0.1">1.0</Parameter>
+				<Parameter id="-2" userMin="0" userMax="2" lockedForRandom="false" mutationFactor="0.1">0.0</Parameter>
 				<Bidule id="UID_1240916478" type="com.plogue.BinaryLogicOperator" displayName="&gt;=" processingMode="process">
 					<Geometry x="-27.8064" y="-26.249" w="0" h="0"/>
 					<ChannelConfig numSampleIn="2" numSampleOut="1" numMidiIn="0" numMidiOut="0" numFreqIn="0" numFreqOut="0" numMagIn="0" numMagOut="0"/>
